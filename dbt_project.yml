@@ -36,5 +36,5 @@ models:
       # Applies to all files under models/example/
       staging:
           materialized: view
-      marts:
-        +materialized: table
+ #     marts:
+ #       +materialized: table
