@@ -1,0 +1,15 @@
+with abc as 
+(select
+100 as total
+union all
+select 
+2000 as total
+union all
+select 
+5500 as total
+)
+
+select
+total_arr,
+{{cents_to_dollars('total_arr', 2)}} as total_arr_in_hundreds
+from abc
