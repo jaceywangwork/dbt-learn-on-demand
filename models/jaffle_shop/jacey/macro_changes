@@ -10,6 +10,11 @@ select
 )
 
 select
-total_arr,
-{{cents_to_dollars('total_arr', 2)}} as total_arr_in_hundreds
+total,
+{{cents_to_dollars('total', 2)}} as total_in_hundreds
 from abc
+
+
+--click compile code
+--also you can run the code, get the sql version for trouble shooting
+--cli version, use bash to run the code
